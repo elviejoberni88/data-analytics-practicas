@@ -46,6 +46,8 @@ CREATE TABLE productos (
     precio          DECIMAL (10, 2) NOT NULL,
     stock           INT             DEFAULT (0),
     activo          BIT             DEFAULT 1,
+    CONSTRAINT CK_productos_precio CHECK (precio >= 0),
+    CONSTRAINT CK_productos_stock  CHECK (stock  >= 0),
     CONSTRAINT FK_productos_categorias FOREIGN KEY (id_categoria) REFERENCES categorias (id_categoria)
 );
 
@@ -56,6 +58,8 @@ CREATE TABLE ventas (
     cantidad        INT             NOT NULL,
     precio_unitario DECIMAL (10, 2) NOT NULL,
     fecha_venta     DATE            NOT NULL,
+    CONSTRAINT CK_ventas_cantidad        CHECK (cantidad > 0),
+    CONSTRAINT CK_ventas_precio_unitario CHECK (precio_unitario >= 0),
     CONSTRAINT FK_ventas_clientes FOREIGN KEY (id_cliente) REFERENCES clientes (id_cliente),
     CONSTRAINT FK_ventas_productos FOREIGN KEY (id_producto) REFERENCES productos (id_producto)
 );
