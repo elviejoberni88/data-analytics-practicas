@@ -2,23 +2,33 @@
 
 Repositorio con los scripts y entregables del curso Data Scientist (Coderhouse), resueltos para **Microsoft SQL Server 2025**.
 
-## Contenido
+## Proyecto RetailPro
+
+Proyecto final del curso: dashboard de inteligencia de negocios sobre una cadena de retail de tecnología. La base `Ventas_Tech_DB` es el back-end que se usa en los módulos 5 a 8.
 
 | Módulo | Script | Descripción |
 |---|---|---|
-| 2 — Unidad 1 | [`modulo2/modulo2_unidad1_diseno.sql`](modulo2/modulo2_unidad1_diseno.sql) | Diseño de las tablas `clientes` y `productos` (DDL). |
-| 3 | [`modulo3/ddl_dml_bodega.sql`](modulo3/ddl_dml_bodega.sql) | DDL y DML del inventario de BodegaTech: tabla `inventario` con 10 productos, ventas y baja lógica. |
-| 3 | [`modulo3/ventas_tech_db.sql`](modulo3/ventas_tech_db.sql) | Esquema normalizado (3NF) de `Ventas_Tech_DB`: categorías, clientes, productos y ventas, con 25 registros iniciales. |
+| 3 | [`RetailPro/modulo3/ventas_tech_db.sql`](RetailPro/modulo3/ventas_tech_db.sql) | Esquema normalizado (3NF) de `Ventas_Tech_DB`: categorías, clientes, productos y ventas, con 25 registros iniciales. |
+
+## Prácticas de clase
+
+| Módulo | Script | Descripción |
+|---|---|---|
+| 2 — Unidad 1 | [`practicas/modulo2/modulo2_unidad1_diseno.sql`](practicas/modulo2/modulo2_unidad1_diseno.sql) | Diseño de las tablas `clientes` y `productos` (DDL). |
+| 3 | [`practicas/modulo3/ddl_dml_bodega.sql`](practicas/modulo3/ddl_dml_bodega.sql) | DDL y DML del inventario de BodegaTech: tabla `inventario` con 10 productos, ventas y baja lógica. |
 
 ## Estructura del repositorio
 
 ```
 .
-├── modulo2/
-│   └── modulo2_unidad1_diseno.sql
-├── modulo3/
-│   ├── ddl_dml_bodega.sql
-│   └── ventas_tech_db.sql
+├── RetailPro/
+│   └── modulo3/
+│       └── ventas_tech_db.sql
+├── practicas/
+│   ├── modulo2/
+│   │   └── modulo2_unidad1_diseno.sql
+│   └── modulo3/
+│       └── ddl_dml_bodega.sql
 └── README.md
 ```
 
