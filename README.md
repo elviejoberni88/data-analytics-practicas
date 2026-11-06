@@ -9,6 +9,7 @@ Proyecto final del curso: dashboard de inteligencia de negocios sobre una cadena
 | Módulo | Script | Descripción |
 |---|---|---|
 | 3 | [`RetailPro/modulo3/ventas_tech_db.sql`](RetailPro/modulo3/ventas_tech_db.sql) | Esquema normalizado (3NF) de `Ventas_Tech_DB`: categorías, clientes, productos y ventas, con 25 registros iniciales. |
+| 4 | [`RetailPro/modulo4/m4_consultas_negocio.sql`](RetailPro/modulo4/m4_consultas_negocio.sql) | Consultas de negocio sobre `Ventas_Tech_DB`: resumen mensual, ranking de productos, clientes recurrentes y comparación con el promedio. |
 
 ## Prácticas de clase
 
@@ -22,8 +23,10 @@ Proyecto final del curso: dashboard de inteligencia de negocios sobre una cadena
 ```
 .
 ├── RetailPro/
-│   └── modulo3/
-│       └── ventas_tech_db.sql
+│   ├── modulo3/
+│   │   └── ventas_tech_db.sql
+│   └── modulo4/
+│       └── m4_consultas_negocio.sql
 ├── practicas/
 │   ├── modulo2/
 │   │   └── modulo2_unidad1_diseno.sql
